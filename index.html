@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Bookmark landing page</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap">
+  <link rel='stylesheet' href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css'>
+</head>
+<body>
+
+  <header class="header">
+    <div class="overlay has-fade hide-for-desktop"></div>
+    
+    <nav class="flex flex-jc-sb flex-ai-c container container--pall">
+      <a href="/" class="header__logo logo">
+        <i class='bx bxs-bookmark'></i>
+        <span>bookmark</span>
+      </a>
+
+      <a href="#" id="btnHamburger" class="header__hamburger hide-for-desktop">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+
+      <div class="header__links hide-for-mobile">
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact</a>
+        <a href="#" class="btn-red">Login</a>
+      </div>
+    </nav>
+
+    <div class="header__menu container--px has-fade hide-for-desktop">
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">Contact</a>
+      <a href="#">Login</a>
+    </div>
+
+    <div class="header__social-icons has-fade hide-for-desktop">
+      <a href="#">
+        <i class='bx bxl-facebook-square'></i>
+      </a>
+      <a href="#">
+        <i class='bx bxl-twitter'></i>
+      </a>
+    </div>
+  </header>
+  
+  <section class="hero">
+    <div class="container">
+      <div class="hero__image"></div>
+
+      <div class="hero__text container--pall">
+        <h1>A Simple Bookmark Manager</h1>
+        <p>
+          A clean and simple interface to organize your favourite websites. Open a new 
+          browser tab and see your sites load instantly. Try it for free.
+        </p>
+        <a href="#" class="primary-btn btn-blue">Get it on Chrome</a>
+        <a href="#" class="primary-btn btn-smoke">Get it on Firefox</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <div class="features__text container--pall">
+        <h2>Features</h2>
+        <p>
+          Our aim is to make it quick and easy for you to access your favourite websites. 
+          Your bookmarks sync between your devices so you can access them on the go.
+        </p>
+      </div>
+
+      <div class="features__list container--pall">
+        <li class="featureTap active">Simple Bookmarking</li>
+        <li class="featureTap">Speedy Searching</li>
+        <li class="featureTap">Easy Sharing</li>
+      </div>
+
+      <div class="features__feature featureTap active">
+        <div class="feature__image"></div>
+
+        <div class="feature__text container--pall">
+          <h3>Bookmark in one click</h3>
+          <p>
+            Organize your bookmarks however you like. Our simple drag-and-drop interface 
+            gives you complete control over how you manage your favourite sites.
+          </p>
+          <a href="#" class="primary-btn btn-blue">More Info</a>
+        </div>
+      </div>
+
+      <div class="features__feature featureTap speedy--searching">
+        <div class="feature__image"></div>
+
+        <div class="feature__text container--pall">
+          <h3>Intelligent Search</h3>
+          <p>
+            Our powerful search feature will help you find saved sites 
+            in no time at all. No need to trawl through all of your bookmarks.
+          </p>
+          <a href="#" class="primary-btn btn-blue">More Info</a>
+        </div>
+      </div>
+
+      <div class="features__feature featureTap easy--sharing">
+        <div class="feature__image"></div>
+
+        <div class="feature__text container--pall">
+          <h3>Share your bookmarks</h3>
+          <p>
+            Easily share your bookmarks and collections with others. 
+            Create a shareable link that you can send at the click of a button.
+          </p>
+          <a href="#" class="primary-btn btn-blue">More Info</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="extension container--pall">
+    <div class="container">
+      <div class="extension__info container--px">
+        <h1>Download the extension</h1>
+        <p>
+          We’ve got more browsers in the pipeline. 
+          Please do let us know if you’ve 
+          got a favourite you’d like us to prioritize.
+        </p>
+      </div>
+  
+      <div class="extension__browsers-cards">
+        <div class="extension__card">
+          <img src="images/logo-chrome.svg" alt="Google Chrome Logo">
+          <div class="card__details">
+            <h3>Add to Chrome</h3>
+            <span>Minimum version 62</span>
+          </div>
+          <div class="card__separate"></div>
+          <button type="button" class="card__add-btn">Add & Install Extension</button>
+        </div>
+          
+        <div class="extension__card">
+          <img src="images/logo-firefox.svg" alt="Google Chrome Logo">
+          <div class="card__details">
+            <h3>Add to Firefox</h3>
+            <span>Minimum version 55</span>
+          </div>
+          <div class="card__separate"></div>
+          <button type="button" class="card__add-btn">Add & Install Extension</button>
+        </div>
+
+        <div class="extension__card">
+          <img src="images/logo-opera.svg" alt="Google Chrome Logo">
+          <div class="card__details">
+            <h3>Add to Opera</h3>
+            <span>Minimum version 46</span>
+          </div>
+          <div class="card__separate"></div>
+          <button type="button" class="card__add-btn">Add & Install Extension</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faqs">
+    <div class="container container--pall">
+      <div class="faqs__info">
+        <h1>Frequently Asked Questions</h1>
+        <p>
+          Here are some of our FAQs. If you have any other questions you’d like 
+          answered please feel free to email us.
+        </p>
+      </div>
+  
+      <div class="faqs__questions">
+        <div class="questions__question">
+          <input type="radio" name="InpRadio" class="question__input-radio" id="faqsQuestion1">
+
+          <label for="faqsQuestion1" class="question__info">
+            <h3>What is Bookmark?</h3>
+            <span>
+              <i class='bx bx-chevron-down'></i>
+            </span>
+          </label>
+          
+          <div class="question__text">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+              justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+            </p>
+          </div>
+        </div>
+        
+        <div class="questions__question">
+          <input type="radio" name="InpRadio" class="question__input-radio" id="faqsQuestion2">
+
+          <label for="faqsQuestion2" class="question__info">
+            <h3>How can I request a new browser?</h3>
+            <span>
+              <i class='bx bx-chevron-down'></i>
+            </span>
+          </label>
+          
+          <div class="question__text">
+            <p>
+              Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+              Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+              ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+              Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+            </p>
+          </div>
+        </div>
+
+        <div class="questions__question">
+          <input type="radio" name="InpRadio" class="question__input-radio" id="faqsQuestion3">
+
+          <label for="faqsQuestion3" class="question__info">
+            <h3>Is there a mobile app?</h3>
+            <span>
+              <i class='bx bx-chevron-down'></i>
+            </span>
+          </label>
+          
+          <div class="question__text">
+            <p>
+              Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+              urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+              sollicitudin ex et ultricies bibendum.
+            </p>
+          </div>
+        </div>
+
+        <div class="questions__question">
+          <input type="radio" name="InpRadio" class="question__input-radio" id="faqsQuestion4">
+
+          <label for="faqsQuestion4" class="question__info">
+            <h3>What about other Chromium browsers?</h3>
+            <span>
+              <i class='bx bx-chevron-down'></i>
+            </span>
+          </label>
+          
+          <div class="question__text">
+            <p>
+              Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+              vitae neque eget nisl gravida pellentesque non ut velit.
+            </p>
+          </div>
+        </div>
+
+        <a href="#" class="faqs__cta">More Info</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container container--pall">
+      <div class="contact__header">
+        <span class="contact__header--subtitle">35,000+ already joined</span>
+        <h1 class="contact__header--title">Stay up-to-date with what we’re doing</h1>
+      </div>
+
+      <form class="contact__form">
+        <div class="form__input--group form__input--group--email">
+          <input class="form__input form__input--email" type="text" name="email" placeholder="Enter your email address">
+          <span class="form__input--error--icon"><i class='bx bxs-error-circle'></i></span>
+          <span class="form__input--error--message"></span>
+        </div>
+
+        <div class="form__input--group form__input--group--submit">
+          <input class="form__input form__input--submit" type="submit" value="Contact Us">
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container container--px">
+      <div class="footer__left">
+        <a href="/" class="footer__left--logo logo">
+          <i class='bx bxs-bookmark'></i>
+          <span>bookmark</span>
+        </a>
+  
+        <ul class="footer__left--links">
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer__right">
+        <div class="footer__right--icons">
+          <a href="#"><i class='bx bxl-facebook-square'></i></a>
+          <a href="#"><i class='bx bxl-twitter'></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
